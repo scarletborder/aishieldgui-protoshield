@@ -7,7 +7,7 @@ on:
 
 jobs:
   create-release:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     permissions:
       # 需要写入权限来创建 Release 和上传附件
       contents: write
