@@ -39,7 +39,7 @@ jobs:
       - name: Create version.json
         if: steps.check_branch.outputs.is_on_main == 'true'
         run: |
-          echo '{ "version": "${{ env.VERSION }}" }' > version.json
+          echo '{ "version": ${{ env.VERSION }} }' > version.json
           echo "Created version.json with content:"
           cat version.json
 
